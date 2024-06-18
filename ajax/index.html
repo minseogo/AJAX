@@ -8,35 +8,13 @@
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script> 
-  <script>
+  
+  <script src = "./js/ajax.js"></script>
 
-    $(document).ready(function(){     
-        // API : 데이터를 화면에 적용 구현 (Application Programming Interface)
-        // 소프트웨어 애플리케이션 간의 상호작용
-        // 웹 서버와 클라이언트 간의 데이터 교환을 가능하게 합니다. 
-        // 예를 들어, REST API, GraphQL API 등이 있습니다.
-        $.ajax({
-          url: "/ajax/json/data.json", 
-          //데이터경로 xml, json, csv, php, jsp, asp 데이터를 가진 파일경로
-          type: "GET", // 접속방법    GET, POST, PUT, DELET 중 하나
-          dataType: "json", // 가지고 올 데이터의 타입
-          success: function(data) { //접속성공 -> 가지고 온 데이터를 data라는 변수에 저장
-            console.log(data); //반드시 확인할것            
-            $("#target p").html(data.text); // 출력하기
-          },
-          error: function(xhr, status, error) { //접속실패
-            console.error("Error: " + error);
-          }
-        })
-    })
-  </script>
 </head>
 <body>
-    <div class="wrap">
-        <div id="target">
-          <p>여기에 비동기로 데이터를 끌고와서 출력하게됨</p>
-        </div>
+    <ul class="gnb">
       
-    </div>
+    </ul>
 </body>
 </html>
