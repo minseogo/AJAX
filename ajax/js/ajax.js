@@ -13,11 +13,11 @@ $(document).ready(function(){
       // 빈 문자열 gnbli를 초기화합니다
 
       data["menu"].forEach(function(ele, idx){
-        
+
         console.log(`${idx}번째 데이터는 ${ele}`);
         // ${idx}번째 데이터는 ${ele} 부분은 각 데이터 항목의 인덱스와 내용을 콘솔에 출력하여,
         // 코드 실행 중 데이터를 쉽게 확인하고 디버깅할 수 있도록 도와줍니다
-        // 이는 데이터가 올바르게 처리되고 있는지 확인하기 위해 유용한 도구입니다
+        // 이는 데이터가 올바르게 처리되고 있는지 확인하기 위해 유용한 도구입니다.
 
         gnbli += `<li>${ele["category"]}`;
         gnbli += `<ul>`;
