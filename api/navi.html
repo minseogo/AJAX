@@ -14,7 +14,7 @@
     <div class="d-flex flex-column align-items-center 
                 justify-content-center text-white bg-dark py-5">
         <h1>반드시 인터넷 주소창에서 주소를 직접 쳐서 확인하기</h1>
-        <p>http://furong0820.dothome.co.kr/api/navi.html</p>
+        <p>http://minseogo.dothome.co.kr/api/navi.html</p>
         <p>ajax메서드를 이용해서 api연동</p>
     </div>
 
@@ -54,6 +54,7 @@
                       <li><a class="dropdown-item" href="#">API</a></li>
                       <li><a class="dropdown-item" href="#">WebApp</a></li>
                       <li><a class="dropdown-item" href="#">React</a></li>
+                      <li><a class="dropdown-item" href="#">Bootstrap</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">E-commerce</a></li>
                       <li><a class="dropdown-item" href="#">gnuboard</a></li>
@@ -83,6 +84,8 @@
             </div>
           </nav>
     </header>
+
+    <section style ="height: 300vh;"></section>
    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -91,6 +94,20 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
   <!-- ajax실행식넣기 -->
+  <script>
+    // 섹션태그에 bg-white라는 클래스를 적용해
+
+    $("section").html($(".bg-dark").html());
+    $("section").attr('class', 'bg-white')
+    $("body").attr("data-any", "아무거나");
+
+    $(window).on('scroll', ()=>{
+        // 스크롤 할때마다 실행 명령문
+        $("body").attr("data-position", $(window).scrollTop());
+    });
+
+
+</script>
 
 </body>
 </html>
